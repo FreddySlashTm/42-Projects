@@ -12,39 +12,6 @@
 
 #include "libft.h"
 
-// how many words cuenta la cantidad de palabras que van a salir
-// de str dividiendolas con c
-// word len cuenta el largo de cada palabra divida
-// free array libera la lista creada cuando no queden
-// más palabras por meter
-// ft_split 
-//
-// ft_split recibe una string y un caracter para cortarla. 
-// crearemos un **buffer que es una lista que va a almacenar
-// las palabras ya divididas, un index para recorrer esta lista
-// y controlar lo que vayamos escribiendo y un wordlen
-// que básicamente almacenará el largo de cada palabra gracias
-// a la función ft_wordlen
-// Reservamos la memoria en la lista buffer con malloc usando
-// el largo de todas las palabras que hayan en la string.
-// Primero checkeamos que si no existe la lista retornamos NULL
-// Ahora iteramos sobre el indice de la lista simpre que sea
-// menor al número de palabras que buscamos, las cuales
-// conocemos gracias a how many words.
-// Tenemos un contador i que va a marcar el comienzo de 
-// la palabra dentro de str.
-// Chequeamos con un bucle si lo que hay delante de la palabra
-// es el char que divide para avanzar hacia la palabara que buscamos
-// Cuando llegamos asignamos un espacio a la palabra correspondiente
-// dentro de buffer, usamos substr para sacar la palabra de la frase.
-// Así con cada palabra que tengamos que sacar de la frase, el mismo proceso
-// solo que le añadimos el largo de la palabra a i para
-// que continúe en la siguiente.
-// iteración por ahí.
-// Si no hay más palabras para la lista se libera la memoria.
-// Por último añadimos NULL al final de la lista y
-// retornamos la lista.
-
 static int	ft_how_many_words(char const *s, char c)
 {
 	int	i;
