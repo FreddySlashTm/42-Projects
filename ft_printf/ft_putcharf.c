@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "printf.h"
-#include <stdarg.h>
 
 char	ft_putcharf(char c)
 {
